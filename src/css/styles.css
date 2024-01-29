@@ -1,5 +1,6 @@
 body {
     background-color: #000;
+    max-height: auto;
 }
 
 h1 {
@@ -12,10 +13,10 @@ h1 {
     left: 0;
     bottom: 0;
     padding: 0.75rem;
-    width: 300px;
+    width: 420px;
 }
 
-.sidebar__navigation {
+.sidebar__navigation, .sidebar__library  {
     background-color: #121212;
     border-radius: 0.5rem;
     padding: 1rem 0 0 1rem;
@@ -33,21 +34,104 @@ h1 {
     width: 80px;
 }
 
-.sidebar nav ul {
+.sidebar nav ul, .sidebar__library a {
     margin-top: 1rem;
     padding: 0 20px 10px 20px;
+   
 }
 
 .sidebar nav ul li {
-     padding: 10px 0;
-     
-    }
-    
-.sidebar nav ul li a {
+    padding: 10px 0;     
+}
+
+.sidebar nav ul li a,
+.sidebar__library a {
     color: #b3b3b3;
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
     font-family: "DM Sans", sans-serif;
-    gap: 16px;
+
+}
+    
+.sidebar__library {
+    margin: 10px 0 10px 0;
+    height: 520px
+}
+
+ .sidebar__library__library-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 16px;
+    margin-bottom: 20px;
+    color: #a7a7a7;
+}
+
+.sidebar__library__background {
+    background-color: #242424;
+    border-radius: 8px;
+    padding: 8px 10px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+.sidebar__library__library-main-text {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    color: #fff;
+    padding:  20px 20px 0px 20px;
+}
+
+.sidebar__library__library-secondary-text{
+    font-weight: 400;
+    padding:  10px 20px 10px 20px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.875rem;
+    color: #fff;
+}
+
+.sidebar__library__library-button {
+    position: relative;
+    color: #000;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px 4px 16px;
+    margin: 16px 20px 16px 20px;
+    border-radius: 1.5rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    height: 2.5rem;
+    border: 0;
+}
+
+.cookies {
+    padding: 0;
+    margin:  25px 0px ;
+}
+
+.cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.cookies a:hover {
+    text-decoration: underline;
+}
+
+.languages .languages__button {
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
 }
