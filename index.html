@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/variable.css">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/main-content.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous" />
@@ -18,85 +20,110 @@
     <header>
 
     </header>
-    <main>
-        <aside class="sidebar">
-            <nav class="sidebar__navigation">
-                <div class="sidebar__logo">
-                    <a href="">
-                        <img src="./src/img/icons/logo-spotify.png" alt="Logotipo Spotify">
-                    </a>
-                </div>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-home"></span>
-                                <span>Início</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <span class="fa fa-search"></span>
-                                <span>Buscar</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-            <nav class="sidebar__library">
-                <div class="sidebar__library__library-title">
-                    <a href="">
-                        <span class="fa fa-book-open"></span>
-                        <span>Sua Biblioteca</span>
-                    </a>
+    <aside class="sidebar">
+        <nav class="sidebar__navigation">
+            <div class="sidebar__logo">
+                <a href="">
+                    <img src="./src/img/icons/logo-spotify.png" alt="Logotipo Spotify">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-home"></span>
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <span class="fa fa-search"></span>
+                            <span>Buscar</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="sidebar__library">
+            <div class="sidebar__library__library-title">
+                <a href="">
+                    <span class="fa fa-book-open"></span>
+                    <span>Sua Biblioteca</span>
+                </a>
+                <span>
+                    <i class="fa fa-plus"></i>
+                </span>
+            </div>
+            <div class="sidebar__library__background">
+                <div class="sidebar__library__library-main-text">
                     <span>
-                        <i class="fa fa-plus"></i>
+                        Crie sua primeira playlist
                     </span>
                 </div>
-                <div class="sidebar__library__background">
-                    <div class="sidebar__library__library-main-text">
-                        <span>
-                            Crie sua primeira playlist
-                        </span>
-                    </div>
-                    <div class="sidebar__library__library-secondary-text">
-                        <span>
-                            É fácil, vamos te ajudar
-                        </span>
-                    </div>
-                    <button class="sidebar__library__library-button">
-                        Criar playlist
+                <div class="sidebar__library__library-secondary-text">
+                    <span>
+                        É fácil, vamos te ajudar
+                    </span>
+                </div>
+                <button class="sidebar__library__library-button">
+                    Criar playlist
+                </button>
+            </div>
+            <div class="sidebar__library__background">
+                <div class="sidebar__library__library-main-text">
+                    <span>
+                        Que tal seguir um podcast novo?
+                    </span>
+                </div>
+                <div class="sidebar__library__library-secondary-text">
+                    <span>
+                        Avisaremos você sobre novos episódios
+                    </span>
+                </div>
+                <button class="sidebar__library__library-button">
+                    Explore podcasts
+                </button>
+            </div>
+            <div class="cookies">
+                <a href="#">
+                    Cookies
+                </a>
+            </div>
+            <div class="languages">
+                <button class="languages__button">
+                    <span class="fa fa-globe"></span>
+                    <span>Português do Brasil</span>
+                </button>
+            </div>
+        </nav>
+    </aside>
+    <main>
+        <div class="main-container">
+            <nav class="header__navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/img/icons/small-left.png" alt="Seta à esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/img/icons/small-right.png" alt="Seta à direita">
                     </button>
                 </div>
-                <div class="sidebar__library__background">
-                    <div class="sidebar__library__library-main-text">
-                        <span>
-                            Que tal seguir um podcast novo?
-                        </span>
-                    </div>
-                    <div class="sidebar__library__library-secondary-text">
-                        <span>
-                            Avisaremos você sobre novos episódios
-                        </span>
-                    </div>
-                    <button class="sidebar__library__library-button">
-                        Explore podcasts
+                <div class="header__search">
+                    <img src="./src/img/icons/search.png" alt="">
+                    <input type="text" id="search-input" maxlength="800" placeholder="O que você quer ouvir?">
+                </div>
+                <div class="header__login">
+                    <button class="subscribe">
+                        Inscreva-se
+                    </button>
+                    <button class="login">
+                        Entrar
                     </button>
                 </div>
-                <div class="cookies">
-                    <a href="#">
-                        Cookies
-                    </a>
-                </div>
-                <div class="languages">
-                    <button class="languages__button">
-                        <span class="fa fa-globe"></span>
-                        <span>Português do Brasil</span>
-                    </button> 
-                </div>
-            </nav>
-        </aside>
+        </nav>
     </main>
+
+
     <footer>
     </footer>
 </body>

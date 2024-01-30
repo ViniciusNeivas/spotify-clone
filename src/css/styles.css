@@ -1,6 +1,7 @@
 body {
-    background-color: #000;
+    background-color: #000000;
     max-height: auto;
+    font-family: var(--font--dm--sans);
 }
 
 h1 {
@@ -50,8 +51,6 @@ h1 {
     text-decoration: none;
     font-weight: 600;
     font-size: 1rem;
-    font-family: "DM Sans", sans-serif;
-
 }
     
 .sidebar__library {
@@ -79,7 +78,6 @@ h1 {
 .sidebar__library__library-main-text {
     font-size: 1rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     color: #fff;
     padding:  20px 20px 0px 20px;
 }
@@ -87,7 +85,6 @@ h1 {
 .sidebar__library__library-secondary-text{
     font-weight: 400;
     padding:  10px 20px 10px 20px;
-    font-family: "DM Sans", sans-serif;
     font-size: 0.875rem;
     color: #fff;
 }
@@ -102,7 +99,6 @@ h1 {
     padding: 4px 16px 4px 16px;
     margin: 16px 20px 16px 20px;
     border-radius: 1.5rem;
-    font-family: "DM Sans", sans-serif;
     font-size: 0.875rem;
     font-weight: 700;
     height: 2.5rem;
